@@ -157,7 +157,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("img/background.png") no-repeat center;
+    background: url("img/Background.png") no-repeat center;
     height: 100vh;
     color: rgb(255, 255, 255);
     min-height: 500px;
@@ -484,7 +484,7 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
     color: white;
-    background-color: black;
+    background-color: #000000;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -680,6 +680,7 @@ footer span a:hover{
     }
 }
 @media (max-width: 690px) {
+
     .max-width{
         padding: 0 23px;
     }
@@ -697,11 +698,17 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
+    .navbar .logo a{
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    font-weight: 600;
+}
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 25px;
     }
     .home{
         max-width: fit-content;
+        width: 500px;
     }
     .home .home-content .text-3{
         font-size: 27px;
